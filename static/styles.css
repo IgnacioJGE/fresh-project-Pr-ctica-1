@@ -1,0 +1,134 @@
+
+
+
+
+ .center {
+  position: absolute;
+  top: 20%;
+  left: 30%;  
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  animation: girartexto 1s ;
+
+}
+.center2 {
+  position: absolute;
+  top: 5%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  animation: moverTexto 4s ease infinite;
+}
+.clasetextaudio{
+  position: absolute;
+  top: 75%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+.flecha {
+  font-size: 60px;
+  color: rgb(238, 255, 0); 
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+.bien{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+
+  width: 400px;
+  height: 300px;
+  animation: zoom 1.5s infinite ;
+}
+.susbreaking{
+  position: absolute;
+  top: 105%;
+  left: 84%;
+
+  width: 250px;
+  height: 60px;
+  /*animation: zoom 2s infinite;*/
+
+}
+.videobaile{
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes girartexto {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+  
+
+@keyframes moverTexto {
+  0% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+body {
+  display: flex;
+  margin: 0%;
+  background-image: url(cerebroglaxia.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #f1f1f1;
+}
+h1{
+  color: red;
+}
+audio{
+  position: absolute;
+  top: 95%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+h2{
+  font-family:Old English Text MT;
+  font-size: 30px;
+  letter-spacing: 3px;
+  background-image:url(pepekirby.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color:  black ;
+ }
+ p{
+  font-family: comic sans;
+  color: red;
+ }
